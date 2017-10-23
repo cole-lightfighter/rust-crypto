@@ -51,6 +51,7 @@ pub mod sha3;
 mod simd;
 pub mod sosemanuk;
 pub mod sphincs256;
+pub mod sphincs256_helpers;
 mod step_by;
 pub mod symmetriccipher;
 pub mod util;
