@@ -4,6 +4,7 @@ pub const N_LEVELS : u8 = TOTALTREE_HEIGHT / SUBTREE_HEIGHT;
 pub const SEED_BYTES : u8 =  32;
 pub const HASH_BYTES : u8 = 32;
 pub const MSGHASH_BYTES : u8 =  64;
+pub const CRYPTO_STREAM_KEYBYTES : u8 = 32;
 pub const KEY_BYTES : u8 = 32;
 pub const RND_BYTES : u8 = 8;
 pub const N_MASKS : u8 = 32;

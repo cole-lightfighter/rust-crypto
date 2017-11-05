@@ -1,6 +1,10 @@
-use sphincs256::consts::*;
-use sphincs256::types::*;
-use sphincs256::hash::varlen_hash;
+mod consts;
+mod types;
+mod hash;
+
+use consts::*;
+use types::*;
+use hash::varlen_hash;
 
 pub struct LeafAddress {
     level: i32,

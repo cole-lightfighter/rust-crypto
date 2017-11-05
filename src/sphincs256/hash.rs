@@ -1,4 +1,6 @@
-use sphincs256::consts::*;
+mod consts;
+
+use consts::*;
 use blake2s::Blake2s;
 use digest::Digest;
 
@@ -20,6 +22,8 @@ mod tests {
     fn works_with_multiple_input_len() {
         let _ = varlen_hash(&[0u8]);
         let _ = varlen_hash(&[0u8; 2]);
-        let _ = varlen_hash(&[0u8; 3]);
+        let _ = varlen_hash(&[0u8; 16]);
+        let _ = varlen_hash(&[0u8; 256]);
+        let _ = varlen_hash(&[0u8; 1024]);
     }
 }
